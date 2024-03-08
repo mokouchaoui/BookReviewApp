@@ -47,4 +47,48 @@ class Book
     {
         return $this->id;
     }
+
+    public function setTitle(string $title): self
+    {
+        if (empty($title)) {
+            throw new \InvalidArgumentException('Title cannot be empty');
+        }
+
+        $this->title = $title;
+
+        return $this;
+    }
+
+    public function setDescription(string $description): self
+    {
+        if (empty($description)) {
+            throw new \InvalidArgumentException('Description cannot be empty');
+        }
+
+        $this->description = $description;
+
+        return $this;
+    }
+
+    public function setGenre(string $genre): self
+    {
+        if (empty($genre)) {
+            throw new \InvalidArgumentException('Genre cannot be empty');
+        }
+
+        $this->genre = $genre;
+
+        return $this;
+    }
+
+    public function setPublicationDate(\DateTimeImmutable $publicationDate): self
+    {
+        if ($publicationDate > new \DateTimeImmutable()) {
+            throw new \InvalidArgumentException('Publication date cannot be in the future');
+        }
+
+        $this->publicationDate = $publicationDate;
+
+        return $this;
+    }
 }
