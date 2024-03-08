@@ -70,6 +70,44 @@ npm run dev
 
 This command starts the Vite development server, typically available at [http://localhost:3000](http://localhost:3000).
 
+
+## Running Tests
+
+
+The BookReview project uses PHPUnit for testing to ensure code quality and functionality. Follow the steps below to execute the tests.
+
+### Prerequisites
+
+- PHPUnit is set up and configured in the project. Ensure you have PHPUnit installed either globally or as part of your project dependencies.
+- The database used for testing should be configured and ready. You may need to set up a separate test database to avoid impacting your development data.
+
+### Running PHPUnit Tests
+
+1. **Navigate to the Backend Directory**
+
+   Ensure you're in the backend directory where the Symfony project and the `phpunit.xml.dist` configuration file are located.
+
+   ```bash
+   cd backend
+   ```
+
+2. **Execute Tests**
+
+   Run PHPUnit to execute all tests. If PHPUnit is installed as a project dependency, use the following command:
+
+   ```bash
+   ./vendor/bin/phpunit
+   ```
+
+   If PHPUnit is installed globally, you might run:
+
+   ```bash
+   phpunit
+   ```
+
+   This command will execute all tests found in the `tests` directory and output the results, indicating any successes or failures.
+
+
 ## Features
 
 - **Books List Screen**: Displays a list of books, including titles, authors, and genres. Features a search functionality to filter books by title.
