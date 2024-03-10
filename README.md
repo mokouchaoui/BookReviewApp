@@ -74,6 +74,27 @@ This command starts the Vite development server, typically available at [http://
 ## Running Tests
 
 
+
+### Frontend Testing (React with Vite)
+
+The frontend of the BookReview project utilizes **React Testing Library** and **Vitest** to ensure the user interface works as expected and to maintain code quality.
+
+#### Prerequisites for Frontend Testing
+- Ensure Node.js and npm are installed, as they are necessary for managing dependencies and running the tests.
+- The project's npm dependencies should be installed. If you haven't done so, run `npm install` in the frontend directory.
+
+#### Executing Frontend Tests
+1. **Navigate to the frontend directory**:
+    ```
+    cd frontend
+    ```
+2. **Run the tests** using the command:
+    ```
+    npm test
+    ```
+    This command executes all tests located in the `tests` directory within the frontend project. It runs the test suite using Vitest and displays the results, indicating any tests that have succeeded or failed.
+
+
 The BookReview project uses PHPUnit for testing to ensure code quality and functionality. Follow the steps below to execute the tests.
 
 ### Prerequisites
