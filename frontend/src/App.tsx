@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import BooksList from './components/BooksList';
-import BookDetail from './components/BookDetail';
+import BookDetail from './components/BookDetails';
 
 
 // App component is the root component of the application
